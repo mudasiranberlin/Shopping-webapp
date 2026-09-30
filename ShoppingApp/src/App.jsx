@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
-import Homepage from './pages/Homepage'
+import Homepage from './pages/home/Homepage'
+import Checkoutpage from './pages/checkout/Checkoutpage'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
     <Routes>
       <Route index element={<Homepage/>}/>
-       <Route path='/checkout' element={<h1>Welcome to checkkout</h1>}/>
+       <Route path='/checkout' element={<Checkoutpage/>}/>
       
 
     </Routes>
