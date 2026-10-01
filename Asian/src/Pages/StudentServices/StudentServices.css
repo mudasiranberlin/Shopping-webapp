@@ -1,0 +1,681 @@
+/* =========================================
+   STUDENT SERVICES
+========================================= */
+
+.student-services-page {
+  background: #fff;
+  color: #222;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.student-services-hero {
+  min-height: 430px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 31, 65, 0.95),
+      rgba(5, 31, 65, 0.76),
+      rgba(5, 31, 65, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1800&q=90");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.student-services-hero-overlay {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.student-services-hero .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.student-services-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #e63946;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.student-services-hero h1 {
+  margin: 0 0 20px;
+
+  color: #fff;
+
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.student-services-hero p {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: rgba(255,255,255,.9);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.student-services-breadcrumb {
+  background: #f7f8fa;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-services-breadcrumb .container {
+  max-width: 1200px;
+  min-height: 65px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.student-services-breadcrumb a {
+  color: #777;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+.student-services-breadcrumb a:hover {
+  color: #e63946;
+}
+
+.student-services-breadcrumb span {
+  color: #aaa;
+
+  font-size: 20px;
+}
+
+.student-services-breadcrumb strong {
+  color: #182b49;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.student-services-intro {
+  max-width: 850px;
+
+  margin: auto;
+
+  padding: 95px 20px 55px;
+
+  text-align: center;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #e63946;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.student-services-intro h2 {
+  margin: 0 0 22px;
+
+  color: #182b49;
+
+  font-size: 43px;
+}
+
+.student-services-intro h2 span {
+  color: #e63946;
+}
+
+.student-services-intro p {
+  margin: 0 auto 14px;
+
+  color: #777;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   DOCUMENT SECTION
+========================================= */
+
+.student-documents {
+  padding: 50px 0 100px;
+
+  background: #f7f8fa;
+}
+
+.student-documents .container {
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.student-documents-heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 45px;
+}
+
+.student-documents-heading h2 {
+  margin: 0;
+
+  color: #182b49;
+
+  font-size: 38px;
+}
+
+.document-count {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #777;
+}
+
+.document-count strong {
+  color: #e63946;
+
+  font-size: 38px;
+}
+
+.document-count span {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.student-document-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+
+/* =========================================
+   DOCUMENT CARD
+========================================= */
+
+.student-document-card {
+  background: #fff;
+
+  border: 1px solid #e3e6eb;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.04);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.student-document-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,.11);
+}
+
+
+/* =========================================
+   DOCUMENT TOP
+========================================= */
+
+.document-top {
+  height: 145px;
+
+  padding: 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0f4f9,
+      #f9fafb
+    );
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pdf-icon {
+  width: 80px;
+  height: 90px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-icon-paper {
+  position: relative;
+
+  width: 62px;
+  height: 78px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #e63946;
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 8px 20px rgba(230,57,70,.25);
+}
+
+.pdf-icon-paper::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 0;
+  height: 0;
+
+  border-top: 20px solid #fff;
+  border-left: 20px solid transparent;
+}
+
+.pdf-icon-paper span {
+  margin-top: 20px;
+}
+
+.document-number {
+  color: #c3c8cf;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   DOCUMENT CONTENT
+========================================= */
+
+.document-content {
+  padding: 30px;
+}
+
+.document-type {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #e63946;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.document-content h3 {
+  min-height: 58px;
+
+  margin: 0 0 14px;
+
+  color: #182b49;
+
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.document-content p {
+  min-height: 75px;
+
+  margin: 0 0 25px;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.document-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #eee;
+}
+
+.document-view,
+.document-download {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 43px;
+
+  padding: 0 18px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition: all .25s ease;
+}
+
+.document-view {
+  background: #182b49;
+
+  color: #fff;
+
+  flex: 1;
+}
+
+.document-view:hover {
+  background: #e63946;
+
+  color: #fff;
+}
+
+.document-download {
+  border: 1px solid #dce0e5;
+
+  color: #182b49;
+}
+
+.document-download:hover {
+  border-color: #e63946;
+
+  color: #e63946;
+}
+
+.document-view span,
+.document-download span {
+  font-size: 17px;
+}
+
+
+/* =========================================
+   HELP / CTA
+========================================= */
+
+.student-services-help {
+  padding: 70px 0;
+
+  background: #182b49;
+}
+
+.student-services-help .container {
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.student-help-inner {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+.student-help-icon {
+  width: 75px;
+  height: 75px;
+
+  min-width: 75px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,.1);
+
+  font-size: 34px;
+}
+
+.student-help-content {
+  flex: 1;
+}
+
+.student-help-content > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #e63946;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.student-help-content h2 {
+  margin: 0 0 8px;
+
+  color: #fff;
+
+  font-size: 29px;
+}
+
+.student-help-content p {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: rgba(255,255,255,.7);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.student-help-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 25px;
+
+  background: #e63946;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: all .25s ease;
+}
+
+.student-help-button:hover {
+  background: #fff;
+
+  color: #182b49;
+}
+
+.student-help-button span {
+  font-size: 19px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .student-document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-help-inner {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .student-services-hero {
+    min-height: 360px;
+  }
+
+  .student-services-hero-overlay {
+    padding: 70px 20px;
+  }
+
+  .student-services-hero h1 {
+    font-size: 42px;
+  }
+
+  .student-services-hero p {
+    font-size: 15px;
+  }
+
+  .student-services-intro {
+    padding: 70px 20px 40px;
+  }
+
+  .student-services-intro h2 {
+    font-size: 34px;
+  }
+
+  .student-documents {
+    padding: 60px 20px 80px;
+  }
+
+  .student-documents-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .student-documents-heading h2 {
+    font-size: 32px;
+  }
+
+  .document-content h3 {
+    min-height: auto;
+  }
+
+  .document-content p {
+    min-height: auto;
+  }
+
+  .document-actions {
+    flex-direction: column;
+  }
+
+  .document-view,
+  .document-download {
+    width: 100%;
+  }
+
+  .student-services-help {
+    padding: 60px 20px;
+  }
+
+  .student-help-inner {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .student-help-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}

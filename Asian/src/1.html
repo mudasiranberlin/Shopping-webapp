@@ -1,0 +1,157 @@
+Add the page to your app
+If you are using React Router:
+
+import CollegeOfSciences from "./pages/CollegeOfSciences";
+
+<Route
+  path="/college-of-sciences"
+  element={<CollegeOfSciences />}
+/>
+
+Then your header submenu can be structured like this:
+
+<li className="has-submenu">
+  <a href="/college-of-sciences">
+    Colleges
+    <span className="submenu-arrow">▾</span>
+  </a>
+
+  <ul className="submenu">
+    <li>
+      <a href="/college-of-sciences">
+        College of Sciences
+      </a>
+    </li>
+
+    <li>
+      <a href="/college-business">
+        College of Business Administration
+      </a>
+    </li>
+
+    <li>
+      <a href="/college-agriculture">
+        College of Agriculture
+      </a>
+    </li>
+
+    <li>
+      <a href="/college-arts">
+        College of Arts, Humanities & Foreign Languages
+      </a>
+    </li>
+  </ul>
+</li>
+
+This gives you a College of Sciences → Department navigation system where the left sidebar contains:
+
+<!-- about us-->
+
+3. Add the routes
+If you're using React Router, put these imports into your App.jsx or router file:
+
+import {
+  WhyNU,
+  ContactUs,
+  Campus,
+  LibraryAndFacility,
+  GovernmentRecognition,
+  Internationalization,
+  MissionVisionGoal,
+  StructureOfNU,
+  MessageOfViceRector,
+} from "./pages/UniversityPages";
+
+Then add the routes:
+
+<Route path="/why-nu" element={<WhyNU />} />
+
+<Route path="/contact" element={<ContactUs />} />
+
+<Route path="/campus" element={<Campus />} />
+
+<Route
+  path="/library-facility"
+  element={<LibraryAndFacility />}
+/>
+
+<Route
+  path="/government-recognition"
+  element={<GovernmentRecognition />}
+/>
+
+<Route
+  path="/internationalization"
+  element={<Internationalization />}
+/>
+
+<Route
+  path="/mission-vision-goal"
+  element={<MissionVisionGoal />}
+/>
+
+<Route
+  path="/structure"
+  element={<StructureOfNU />}
+/>
+
+<Route
+  path="/vice-rector-message"
+  element={<MessageOfViceRector />}
+/>
+
+4. Header submenu
+Since you previously asked for a submenu in the header, I recommend putting all these pages under About.
+
+Replace your current About menu item with this:
+
+<div className="nav-dropdown">
+
+  <a href="/about" className="dropdown-title">
+    About
+    <span>⌄</span>
+  </a>
+
+  <div className="dropdown-menu">
+
+    <a href="/about">
+      About AIC
+    </a>
+
+    <a href="/why-nu">
+      Why NU?
+    </a>
+
+    <a href="/campus
+
+
+    <!-- 1 -->
+
+    Add it to your React app
+If you're using React Router, add:
+
+import AboutAIC from "./pages/AboutAIC";
+
+and your route:
+
+<Route path="/about" element={<AboutAIC />} />
+
+Then change the header's About AIC link from:
+
+<a href="#about" onClick={closeMenu}>
+  About AIC
+</a>
+
+to:
+
+<a href="/about" onClick={closeMenu}>
+  About AIC
+</a>
+
+If you are not using React Router, simply use:
+
+<a href="/about.html">
+  About AIC
+</a>
+
+if you create a separate HTML entry.

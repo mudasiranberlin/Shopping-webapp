@@ -1,0 +1,101 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 650px;
+  background:
+    linear-gradient(
+      rgba(5, 31, 54, 0.78),
+      rgba(5, 31, 54, 0.72)
+    ),
+    url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1800&q=85")
+      center/cover;
+}
+
+.hero-overlay {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: #fff;
+  max-width: 750px;
+}
+
+.hero-small,
+.section-label {
+  display: inline-block;
+  color: #f7a900;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 7vw, 78px);
+  line-height: 1.08;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #f7b733;
+}
+
+.hero p {
+  font-size: 19px;
+  max-width: 650px;
+  color: #eee;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #f7a900;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #082d4f;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #082d4f;
+}
+
+.btn-white {
+  background: #fff;
+  color: #082d4f;
+}
+
+.btn-white:hover {
+  background: #f7a900;
+  color: #fff;
+}

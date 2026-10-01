@@ -1,0 +1,12 @@
+import { Router } from "express";
+import bcrypt from "bcryptjs";
+import User from "../models/User.js";
+import ContactMessage from "../models/ContactMessage.js";
+import NewsletterSubscriber from "../models/NewsletterSubscriber.js";
+import { protect, adminOnly } from "../middleware/auth.js";
+const router=Router();
+router.use(protect,adminOnly);
+router.get("/dashboard",async(req,res,next)=>{try{res.json({success:true,data:{users:await User.countDocuments(),messages:await ContactMessage.countDocuments(),subscribers:await NewsletterSubscriber.countDocuments()}})}catch(e){next(e)}});
+router.get("/users",async(req,res,next)=>{try{res.json({success:true,data:await User.find().select("-password").sort({createdAt:-1})})}catch(e){next(e)}});
+router.patch("/users/:id/role",async(req,res,next)=>{try{if(!["user","admin"].includes(req.body.role))return res.status(400).json({success:false,message:"Invalid role"});const data=await User.findByIdAndUpdate(req.params.id,{role:req.body.role},{new:true}).select("-password");if(!data)return res.status(404).json({success:false,message:"User not found"});res.json({success:true,message:"Role updated",data})}catch(e){next(e)}});
+export default router;

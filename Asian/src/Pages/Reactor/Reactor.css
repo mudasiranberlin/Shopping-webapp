@@ -1,0 +1,1554 @@
+/* =========================================================
+   UNIVERSITY INNER PAGES
+========================================================= */
+
+.university-page {
+  background: #fff;
+  color: #333;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.university-page-hero {
+  min-height: 410px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 27, 104, .97),
+      rgba(4, 27, 104, .78),
+      rgba(237, 28, 36, .35)
+    ),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+
+  color: white;
+}
+
+.university-page-hero-overlay {
+  width: 100%;
+}
+
+.page-hero-label {
+  display: inline-block;
+
+  color: #f4c400;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.university-page-hero h1 {
+  margin: 0 0 20px;
+
+  font-size: 58px;
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.university-page-hero p {
+  max-width: 750px;
+
+  margin: 0;
+
+  color: rgba(255,255,255,.9);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.page-breadcrumb {
+  padding: 16px 0;
+
+  background: #f5f6f9;
+
+  font-size: 14px;
+}
+
+.page-breadcrumb a {
+  color: #071f70;
+}
+
+.page-breadcrumb span {
+  color: #999;
+
+  margin: 0 10px;
+}
+
+.page-breadcrumb strong {
+  color: #ed1c24;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.info-section {
+  padding: 90px 0;
+}
+
+.grey-section {
+  padding: 90px 0;
+
+  background: #f6f7fa;
+}
+
+.section-heading {
+  max-width: 780px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.section-heading-left {
+  max-width: 800px;
+
+  margin-bottom: 50px;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #ed1c24;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.section-heading h2,
+.section-heading-left h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin: 0 0 18px;
+}
+
+.section-heading h2 span,
+.section-heading-left h2 span {
+  color: #ed1c24;
+}
+
+.section-heading p,
+.section-heading-left p {
+  color: #666;
+
+  line-height: 1.9;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   WHY NU
+========================================================= */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.why-card {
+  padding: 35px 30px;
+
+  background: #fff;
+
+  border: 1px solid #e5e7ec;
+
+  border-bottom: 4px solid transparent;
+
+  transition: .3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-7px);
+
+  border-bottom-color: #ed1c24;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.09);
+}
+
+.why-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eef1fa;
+
+  border-radius: 50%;
+
+  font-size: 28px;
+
+  margin-bottom: 22px;
+}
+
+.why-card h3 {
+  color: #071f70;
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  margin: 0;
+
+  color: #666;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BLUE HIGHLIGHT
+========================================================= */
+
+.blue-highlight {
+  padding: 90px 0;
+
+  color: white;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061b61,
+      #092c94
+    );
+}
+
+.highlight-content {
+  max-width: 850px;
+}
+
+.section-label.light {
+  color: #f4c400;
+}
+
+.highlight-content h2 {
+  color: #fff;
+
+  font-size: 44px;
+
+  margin: 0 0 20px;
+}
+
+.highlight-content p {
+  max-width: 700px;
+
+  margin: 0 auto 30px;
+
+  color: rgba(255,255,255,.82);
+
+  line-height: 1.9;
+
+  font-size: 16px;
+}
+
+.page-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 27px;
+
+  border: 0;
+
+  background: #ed1c24;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.page-button:hover {
+  background: #c9151d;
+
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-page-section {
+  background: #fff;
+}
+
+.contact-layout {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+.contact-details h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin: 0 0 20px;
+}
+
+.contact-details h2 span {
+  display: block;
+
+  color: #ed1c24;
+}
+
+.contact-details > p {
+  color: #666;
+
+  line-height: 1.9;
+
+  margin-bottom: 35px;
+}
+
+.contact-detail {
+  display: flex;
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+.detail-icon {
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #071f70;
+
+  color: white;
+
+  border-radius: 4px;
+
+  font-size: 20px;
+}
+
+.contact-detail h3 {
+  color: #071f70;
+
+  margin: 0 0 5px;
+
+  font-size: 17px;
+}
+
+.contact-detail p {
+  color: #666;
+
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+.university-contact-form {
+  padding: 40px;
+
+  background: #f6f7fa;
+
+  border-top: 4px solid #ed1c24;
+}
+
+.university-contact-form h3 {
+  color: #071f70;
+
+  margin: 0 0 25px;
+
+  font-size: 25px;
+}
+
+.university-contact-form input,
+.university-contact-form textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #ddd;
+
+  background: #fff;
+
+  outline: none;
+
+  font-family: inherit;
+
+  margin-bottom: 15px;
+
+  font-size: 14px;
+}
+
+.university-contact-form input:focus,
+.university-contact-form textarea:focus {
+  border-color: #071f70;
+}
+
+.form-two {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 15px;
+}
+
+.university-contact-form textarea {
+  resize: vertical;
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.map-placeholder {
+  padding: 0 0 90px;
+}
+
+.map-box {
+  height: 300px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e8ecf3,
+      #dce2ed
+    );
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.map-box span {
+  font-size: 40px;
+}
+
+.map-box h3 {
+  color: #071f70;
+
+  margin: 10px 0 5px;
+}
+
+.map-box p {
+  color: #666;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   CAMPUS / IMAGE TEXT
+========================================================= */
+
+.image-text-layout {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr .9fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.image-text-layout.reverse {
+  grid-template-columns:
+    .9fr 1.1fr;
+}
+
+.large-page-image img {
+  width: 100%;
+
+  height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,.12);
+}
+
+.page-text h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin: 0 0 25px;
+}
+
+.page-text h2 span {
+  display: block;
+
+  color: #ed1c24;
+}
+
+.page-text p {
+  color: #555;
+
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.feature-box {
+  padding: 35px 30px;
+
+  background: #fff;
+
+  text-align: center;
+
+  border: 1px solid #e3e6eb;
+}
+
+.feature-box > span {
+  display: block;
+
+  font-size: 38px;
+
+  margin-bottom: 15px;
+}
+
+.feature-box h3 {
+  color: #071f70;
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+.feature-box p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   FACILITY
+========================================================= */
+
+.facility-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.facility-card {
+  padding: 35px 30px;
+
+  border: 1px solid #e4e7ec;
+
+  transition: .3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+  border-color: #071f70;
+}
+
+.facility-icon {
+  font-size: 38px;
+
+  margin-bottom: 20px;
+}
+
+.facility-card h3 {
+  color: #071f70;
+
+  margin-bottom: 12px;
+}
+
+.facility-card p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+.facility-card a {
+  color: #ed1c24;
+
+  font-weight: 600;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   GOVERNMENT RECOGNITION
+========================================================= */
+
+.recognition-box {
+  display: grid;
+
+  grid-template-columns:
+    130px 1fr;
+
+  gap: 40px;
+
+  padding: 50px;
+
+  background: #f6f7fa;
+
+  border-left: 5px solid #ed1c24;
+}
+
+.recognition-icon {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #071f70;
+
+  font-size: 42px;
+}
+
+.recognition-box h2 {
+  color: #071f70;
+
+  font-size: 40px;
+
+  line-height: 1.2;
+
+  margin: 0 0 22px;
+}
+
+.recognition-box h2 span {
+  display: block;
+
+  color: #ed1c24;
+}
+
+.recognition-box p {
+  color: #555;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline-section {
+  padding: 90px 0;
+
+  background: #f6f7fa;
+}
+
+.timeline {
+  max-width: 850px;
+
+  margin: auto;
+}
+
+.timeline-item {
+  display: grid;
+
+  grid-template-columns:
+    130px 1fr;
+
+  gap: 30px;
+
+  padding-bottom: 30px;
+
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 64px;
+
+  top: 65px;
+
+  width: 2px;
+
+  height: calc(100% - 20px);
+
+  background: #d9dce4;
+}
+
+.timeline-year {
+  width: 100px;
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ed1c24;
+
+  color: #fff;
+
+  font-weight: 700;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.timeline-content {
+  background: #fff;
+
+  padding: 25px 30px;
+
+  border-left: 3px solid #071f70;
+}
+
+.timeline-content h3 {
+  color: #071f70;
+
+  margin: 0 0 10px;
+}
+
+.timeline-content p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   INTERNATIONALIZATION
+========================================================= */
+
+.international-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.international-card {
+  background: #fff;
+
+  padding: 35px;
+
+  border-top: 4px solid #071f70;
+}
+
+.international-card span {
+  color: #ed1c24;
+
+  font-weight: 700;
+
+  font-size: 15px;
+}
+
+.international-card h3 {
+  color: #071f70;
+
+  margin: 15px 0;
+}
+
+.international-card p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   MISSION VISION GOAL
+========================================================= */
+
+.mission-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.mission-card {
+  padding: 40px 30px;
+
+  background: #f6f7fa;
+
+  border-top: 5px solid #071f70;
+}
+
+.vision-card {
+  border-top-color: #ed1c24;
+}
+
+.goal-card {
+  border-top-color: #f4c400;
+}
+
+.mission-icon {
+  width: 65px;
+  height: 65px;
+
+  background: #fff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 27px;
+
+  margin-bottom: 20px;
+}
+
+.mission-card > span {
+  color: #ed1c24;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  font-weight: 700;
+}
+
+.mission-card h2 {
+  color: #071f70;
+
+  font-size: 26px;
+
+  margin: 12px 0 18px;
+}
+
+.mission-card p {
+  color: #666;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ORGANIZATION CHART
+========================================================= */
+
+.organization-chart {
+  max-width: 1100px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.org-level {
+  display: flex;
+
+  justify-content: center;
+}
+
+.org-box {
+  min-width: 220px;
+
+  padding: 20px 25px;
+
+  background: #fff;
+
+  border: 2px solid #071f70;
+
+  box-shadow:
+    0 7px 20px rgba(0,0,0,.05);
+}
+
+.org-box strong {
+  display: block;
+
+  color: #071f70;
+
+  font-size: 17px;
+
+  margin-bottom: 6px;
+}
+
+.org-box span {
+  color: #777;
+
+  font-size: 13px;
+}
+
+.main-org {
+  border-color: #ed1c24;
+}
+
+.main-org strong {
+  color: #ed1c24;
+}
+
+.rector-org {
+  background: #071f70;
+}
+
+.rector-org strong,
+.rector-org span {
+  color: #fff;
+}
+
+.org-line {
+  width: 2px;
+
+  height: 40px;
+
+  margin: 0 auto;
+
+  background: #ccd1db;
+}
+
+.org-columns {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+
+  position: relative;
+}
+
+.org-columns:last-child {
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+.small-org {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   VICE RECTOR
+========================================================= */
+
+.vice-message-layout {
+  display: grid;
+
+  grid-template-columns:
+    330px 1fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+.vice-photo-placeholder {
+  width: 100%;
+
+  height: 430px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071f70,
+      #1741a8
+    );
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.vice-photo-placeholder span {
+  width: 140px;
+  height: 140px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.12);
+
+  font-size: 65px;
+
+  margin-bottom: 20px;
+}
+
+.vice-photo-placeholder p {
+  color: #fff;
+
+  font-size: 18px;
+
+  margin: 0;
+}
+
+.vice-message h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin: 0 0 25px;
+}
+
+.vice-message h2 span {
+  display: block;
+
+  color: #ed1c24;
+}
+
+.vice-message > p {
+  color: #555;
+
+  line-height: 1.95;
+
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+.vice-signature {
+  margin-top: 35px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #ddd;
+}
+
+.vice-signature strong {
+  display: block;
+
+  color: #071f70;
+
+  font-size: 18px;
+}
+
+.vice-signature span {
+  display: block;
+
+  color: #777;
+
+  margin-top: 5px;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .university-page-hero {
+    min-height: 350px;
+  }
+
+  .university-page-hero h1 {
+    font-size: 48px;
+  }
+
+  .why-grid,
+  .facility-grid,
+  .feature-grid,
+  .international-grid,
+  .mission-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .contact-layout,
+  .image-text-layout,
+  .image-text-layout.reverse,
+  .vice-message-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .large-page-image img {
+    height: 400px;
+  }
+
+  .org-columns,
+  .org-columns:last-child {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .info-section,
+  .grey-section,
+  .timeline-section {
+    padding: 60px 0;
+  }
+
+  .university-page-hero {
+    min-height: 300px;
+  }
+
+  .university-page-hero h1 {
+    font-size: 38px;
+  }
+
+  .university-page-hero p {
+    font-size: 15px;
+  }
+
+  .section-heading h2,
+  .section-heading-left h2,
+  .page-text h2,
+  .contact-details h2,
+  .recognition-box h2,
+  .vice-message h2 {
+    font-size: 32px;
+  }
+
+  .why-grid,
+  .facility-grid,
+  .feature-grid,
+  .international-grid,
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-two {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .university-contact-form {
+    padding: 25px;
+  }
+
+  .recognition-box {
+    grid-template-columns: 1fr;
+
+    padding: 30px;
+
+    gap: 25px;
+  }
+
+  .recognition-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 30px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 75px 1fr;
+
+    gap: 15px;
+  }
+
+  .timeline-year {
+    width: 70px;
+
+    font-size: 13px;
+  }
+
+  .timeline-item:not(:last-child)::after {
+    left: 34px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .org-columns,
+  .org-columns:last-child {
+    grid-template-columns: 1fr;
+  }
+
+  .org-box {
+    min-width: 0;
+  }
+
+  .vice-photo-placeholder {
+    height: 350px;
+  }
+
+  .highlight-content h2 {
+    font-size: 32px;
+  }
+
+}
+
+/* =========================================================
+   PAGE LAYOUT WITH LEFT SIDEBAR
+========================================================= */
+
+.university-content-layout {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 260px minmax(0, 1fr);
+
+  align-items: start;
+
+  gap: 45px;
+
+  padding: 0 25px;
+}
+
+
+/* =========================================================
+   DESKTOP SIDEBAR
+========================================================= */
+
+.desktop-sidebar {
+  width: 260px;
+
+  position: relative;
+}
+
+.page-sidebar {
+  width: 100%;
+
+  background: #f6f7fa;
+
+  border: 1px solid #e3e6eb;
+
+  border-top: 4px solid #ed1c24;
+}
+
+.page-sidebar-header {
+  padding: 20px;
+
+  background: #071f70;
+
+  color: #fff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.page-sidebar nav {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.page-sidebar nav a {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 15px 18px;
+
+  color: #555;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #e5e7ec;
+
+  transition: .25s ease;
+}
+
+.page-sidebar nav a:hover {
+  color: #071f70;
+
+  background: #eef1fa;
+
+  padding-left: 23px;
+}
+
+.page-sidebar nav a.active {
+  color: #fff;
+
+  background: #ed1c24;
+
+  font-weight: 600;
+}
+
+.sidebar-arrow {
+  font-size: 16px;
+
+  opacity: .7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.university-main-content {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.page-breadcrumb-inner {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.breadcrumb-left {
+  display: flex;
+
+  align-items: center;
+}
+
+.breadcrumb-menu-button {
+  display: none;
+
+  width: 38px;
+  height: 38px;
+
+  border: 0;
+
+  border-radius: 4px;
+
+  background: #071f70;
+
+  color: #fff;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   MOBILE SIDEBAR
+========================================================= */
+
+.mobile-page-sidebar {
+  display: none;
+}
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .university-content-layout {
+    grid-template-columns: 210px minmax(0, 1fr);
+
+    gap: 25px;
+
+    padding: 0 20px;
+  }
+
+  .desktop-sidebar {
+    width: 210px;
+  }
+
+  .page-sidebar nav a {
+    padding: 13px 14px;
+
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  /* Remove desktop sidebar */
+  .desktop-sidebar {
+    display: none;
+  }
+
+  /* Main content becomes full width */
+  .university-content-layout {
+    display: block;
+
+    width: 100%;
+
+    padding: 0;
+  }
+
+  .university-main-content {
+    width: 100%;
+  }
+
+  /* Breadcrumb */
+  .page-breadcrumb-inner {
+    min-height: 60px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .breadcrumb-menu-button {
+    display: flex;
+
+    flex-shrink: 0;
+  }
+
+  /* Mobile sidebar */
+  .mobile-page-sidebar {
+    display: block;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+      max-height .35s ease,
+      opacity .25s ease;
+  }
+
+  .mobile-page-sidebar.mobile-sidebar-open {
+    max-height: 700px;
+
+    opacity: 1;
+
+    padding: 0 15px 15px;
+  }
+
+  .mobile-page-sidebar .page-sidebar {
+    box-shadow:
+      0 10px 30px rgba(0,0,0,.08);
+  }
+
+  .page-sidebar-header {
+    padding: 16px;
+  }
+
+  .page-sidebar nav a {
+    padding: 14px 16px;
+  }
+
+}

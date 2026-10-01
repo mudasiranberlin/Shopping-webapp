@@ -1,0 +1,399 @@
+.collaboration-hero {
+  min-height: 440px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 27, 48, 0.94),
+      rgba(5, 27, 48, 0.72),
+      rgba(5, 27, 48, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=90")
+      center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.collaboration-hero-overlay {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.collaboration-hero span {
+  display: inline-block;
+  color: #d71920;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.collaboration-hero h1 {
+  color: #fff;
+  font-size: 58px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.collaboration-hero p {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.collaboration-breadcrumb {
+  background: #f7f8fa;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.collaboration-breadcrumb .container {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.collaboration-breadcrumb a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.collaboration-breadcrumb a:hover {
+  color: #d71920;
+}
+
+.collaboration-breadcrumb span {
+  color: #aaa;
+}
+
+.collaboration-breadcrumb strong {
+  color: #d71920;
+  font-size: 14px;
+}
+
+.collaboration-section {
+  padding: 95px 0 110px;
+  background: #fff;
+}
+
+.collaboration-heading {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.collaboration-heading > span {
+  color: #d71920;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.collaboration-heading h2 {
+  margin: 12px 0 18px;
+  color: #12263a;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.collaboration-heading p {
+  margin: 0 auto;
+  color: #697586;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   MOU PARTNERS
+========================================= */
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.partner-card {
+  background: #fff;
+  border: 1px solid #e7e9ed;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.11);
+}
+
+.partner-image {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  background: #eef1f4;
+}
+
+.partner-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.partner-card:hover .partner-image img {
+  transform: scale(1.05);
+}
+
+.partner-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 52px;
+  height: 52px;
+  background: #d71920;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.partner-content {
+  padding: 28px 30px 32px;
+}
+
+.partner-content > span {
+  color: #d71920;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.partner-content h3 {
+  color: #142b3d;
+  font-size: 23px;
+  line-height: 1.35;
+  margin: 9px 0 10px;
+}
+
+.partner-content p {
+  margin: 0;
+  color: #747d89;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* =========================================
+   LARGE PHOTO GALLERY
+========================================= */
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px 35px;
+}
+
+.large-photo-card {
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(20, 40, 60, 0.06);
+  transition: 0.3s ease;
+}
+
+.large-photo-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 50px rgba(20, 40, 60, 0.13);
+}
+
+.large-photo {
+  width: 100%;
+  height: 430px;
+  background: #edf0f3;
+  overflow: hidden;
+}
+
+.large-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.large-photo-card:hover .large-photo img {
+  transform: scale(1.035);
+}
+
+.large-photo-info {
+  padding: 28px 30px 32px;
+}
+
+.large-photo-info > span {
+  color: #d71920;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.large-photo-info h3 {
+  color: #142b3d;
+  font-size: 25px;
+  margin: 10px 0 8px;
+}
+
+.large-photo-info p {
+  color: #687584;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.council-gallery .large-photo {
+  height: 450px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+  .collaboration-hero h1 {
+    font-size: 46px;
+  }
+
+  .partner-grid,
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-image {
+    height: 400px;
+  }
+
+  .large-photo {
+    height: 500px;
+  }
+
+  .council-gallery .large-photo {
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .collaboration-hero {
+    min-height: 380px;
+  }
+
+  .collaboration-hero-overlay {
+    padding: 70px 0;
+  }
+
+  .collaboration-hero h1 {
+    font-size: 36px;
+  }
+
+  .collaboration-hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .collaboration-section {
+    padding: 65px 0 80px;
+  }
+
+  .collaboration-heading {
+    margin-bottom: 40px;
+  }
+
+  .collaboration-heading h2 {
+    font-size: 32px;
+  }
+
+  .partner-image {
+    height: 300px;
+  }
+
+  .large-photo {
+    height: 330px;
+  }
+
+  .council-gallery .large-photo {
+    height: 330px;
+  }
+
+  .large-photo-info h3 {
+    font-size: 21px;
+  }
+
+  .partner-content h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collaboration-hero h1 {
+    font-size: 31px;
+  }
+
+  .partner-image {
+    height: 260px;
+  }
+
+  .large-photo {
+    height: 270px;
+  }
+
+  .council-gallery .large-photo {
+    height: 270px;
+  }
+
+  .partner-content,
+  .large-photo-info {
+    padding: 22px;
+  }
+}
+
+
+/* 
+
+Add the pages to your router/navigation
+If you're using React Router:
+
+import {
+  MOUPage,
+  AUPFPage,
+  GoverningCouncilPage,
+} from "./pages/Collaborations/Collaborations";
+
+<Route path="/collaborations/mou" element={<MOUPage />} />
+
+<Route path="/collaborations/aupf" element={<AUPFPage />} />
+
+<Route
+  path="/collaborations/governing-council"
+  element={<GoverningCouncilPage />}
+/>
+
+Then your header submenu can use:
+
+<div className="submenu">
+  <a href="/collaborations/mou">MOU</a>
+
+  <a href="/collaborations/aupf">
+    AUPF
+  </a>
+
+  <a href="/collaborations/governing-council">
+    Governing Council
+  </a>
+</div>
+ */

@@ -1,0 +1,1041 @@
+/* =========================================================
+   ADMISSIONS PAGE
+========================================================= */
+
+.admissions-page {
+  background: #fff;
+  color: #333;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.admission-hero {
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 91, 0.98),
+      rgba(7, 31, 112, 0.85),
+      rgba(237, 28, 36, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=85")
+      center / cover no-repeat;
+
+  color: #fff;
+}
+
+.admission-hero-overlay {
+  width: 100%;
+}
+
+.admission-label {
+  display: inline-block;
+
+  color: #f4c400;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.admission-hero h1 {
+  color: #fff;
+
+  font-size: 62px;
+
+  line-height: 1.05;
+
+  margin: 0 0 20px;
+}
+
+.admission-hero p {
+  max-width: 700px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.admission-breadcrumb {
+  padding: 17px 0;
+
+  background: #f5f6f9;
+
+  font-size: 14px;
+}
+
+.admission-breadcrumb a {
+  color: #071f70;
+}
+
+.admission-breadcrumb span {
+  color: #aaa;
+
+  margin: 0 10px;
+}
+
+.admission-breadcrumb strong {
+  color: #ed1c24;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.admission-main {
+  padding: 85px 0;
+}
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.admission-introduction {
+  max-width: 900px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+.admission-introduction h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  margin: 0 0 20px;
+}
+
+.admission-introduction h2 span {
+  color: #ed1c24;
+}
+
+.admission-introduction > p {
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  margin-bottom: 15px;
+}
+
+.section-label {
+  display: inline-block;
+
+  color: #ed1c24;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.admission-highlights {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 40px;
+
+  text-align: left;
+}
+
+.admission-highlights > div {
+  padding: 25px;
+
+  background: #f7f8fb;
+
+  border-top: 3px solid #071f70;
+}
+
+.admission-highlights span {
+  display: block;
+
+  color: #ed1c24;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.admission-highlights strong {
+  display: block;
+
+  color: #071f70;
+
+  font-size: 18px;
+
+  margin-bottom: 8px;
+}
+
+.admission-highlights p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.admission-layout {
+  display: grid;
+
+  grid-template-columns:
+    270px 1fr;
+
+  gap: 55px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.admission-sidebar {
+  position: sticky;
+
+  top: 30px;
+
+  background: #071f70;
+
+  box-shadow:
+    0 15px 35px
+    rgba(7, 31, 112, 0.15);
+}
+
+.admission-sidebar-title {
+  padding: 25px;
+
+  background: #061958;
+}
+
+.admission-sidebar-title span {
+  display: block;
+
+  color: #f4c400;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 6px;
+}
+
+.admission-sidebar-title h3 {
+  color: #fff;
+
+  font-size: 21px;
+
+  margin: 0;
+}
+
+.admission-sidebar nav {
+  padding: 10px;
+}
+
+.admission-sidebar button {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px;
+
+  border: none;
+
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  transition: 0.25s ease;
+}
+
+.admission-sidebar button span {
+  font-size: 20px;
+
+  color: #f4c400;
+}
+
+.admission-sidebar button:hover,
+.admission-sidebar button.active {
+  background: #ed1c24;
+
+  color: #fff;
+}
+
+.admission-sidebar button:hover span,
+.admission-sidebar button.active span {
+  color: #fff;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.admission-content {
+  min-width: 0;
+}
+
+.admission-content-section {
+  scroll-margin-top: 30px;
+
+  padding-bottom: 65px;
+
+  margin-bottom: 65px;
+
+  border-bottom: 1px solid #e5e7ec;
+}
+
+.admission-content-section:last-of-type {
+  border-bottom: none;
+}
+
+.content-label {
+  display: inline-block;
+
+  color: #ed1c24;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.admission-content-section h2 {
+  color: #071f70;
+
+  font-size: 34px;
+
+  line-height: 1.25;
+
+  margin: 0 0 20px;
+}
+
+.admission-content-section > p,
+.content-intro p {
+  color: #555;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+/* =========================================================
+   REGULATIONS
+========================================================= */
+
+.regulation-list {
+  margin-top: 30px;
+}
+
+.regulation-item {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 20px;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid #e8e9ed;
+}
+
+.regulation-item > span {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #071f70;
+
+  color: #f4c400;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.regulation-item h3 {
+  color: #071f70;
+
+  font-size: 18px;
+
+  margin: 0 0 8px;
+}
+
+.regulation-item p {
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+
+  margin-top: 30px;
+}
+
+.process-card {
+  position: relative;
+
+  padding: 30px;
+
+  background: #f7f8fb;
+
+  border-bottom: 3px solid transparent;
+
+  transition: 0.3s ease;
+}
+
+.process-card:hover {
+  border-bottom-color: #ed1c24;
+
+  transform: translateY(-4px);
+}
+
+.process-number {
+  color: #ed1c24;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.process-card h3 {
+  color: #071f70;
+
+  font-size: 19px;
+
+  margin: 0 0 10px;
+}
+
+.process-card p {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+/* =========================================================
+   REQUIREMENTS
+========================================================= */
+
+.requirements {
+  margin-top: 30px;
+
+  border-top: 1px solid #e4e5e9;
+}
+
+.requirement {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 18px 5px;
+
+  border-bottom: 1px solid #e4e5e9;
+}
+
+.requirement > span {
+  min-width: 34px;
+
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #071f70;
+
+  color: #f4c400;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.requirement p {
+  color: #555;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  margin: 5px 0 0;
+}
+
+/* =========================================================
+   INTERNATIONAL NOTE
+========================================================= */
+
+.international-note {
+  display: flex;
+
+  gap: 18px;
+
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background: #fff8df;
+
+  border-left: 4px solid #f4c400;
+}
+
+.international-note > span {
+  font-size: 28px;
+}
+
+.international-note h3 {
+  color: #071f70;
+
+  margin: 0 0 8px;
+
+  font-size: 18px;
+}
+
+.international-note p {
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+/* =========================================================
+   GRADUATE
+========================================================= */
+
+.graduate-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 35px;
+
+  margin-bottom: 45px;
+}
+
+.graduate-card {
+  padding: 28px;
+
+  background: #f7f8fb;
+
+  border-top: 3px solid #071f70;
+
+  transition: 0.3s ease;
+}
+
+.graduate-card:hover {
+  transform: translateY(-5px);
+
+  border-top-color: #ed1c24;
+
+  box-shadow:
+    0 12px 30px
+    rgba(0, 0, 0, 0.08);
+}
+
+.graduate-icon {
+  font-size: 30px;
+
+  margin-bottom: 15px;
+}
+
+.graduate-card h3 {
+  color: #071f70;
+
+  font-size: 18px;
+
+  margin: 0 0 10px;
+}
+
+.graduate-card p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  margin: 0 0 15px;
+}
+
+.graduate-card a {
+  color: #ed1c24;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.graduate-requirements {
+  padding: 30px;
+
+  background: #f7f8fb;
+}
+
+.graduate-requirements h3 {
+  color: #071f70;
+
+  font-size: 22px;
+
+  margin: 0;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.admission-contact {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 35px;
+
+  margin-top: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071f70,
+      #0d3695
+    );
+}
+
+.admission-contact > div:first-child {
+  max-width: 650px;
+}
+
+.admission-contact span {
+  display: block;
+
+  color: #f4c400;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.admission-contact h2 {
+  color: #fff;
+
+  font-size: 25px;
+
+  margin: 0 0 10px;
+}
+
+.admission-contact p {
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+.admission-contact-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+.admission-contact-buttons a {
+  padding: 13px 18px;
+
+  background: #fff;
+
+  color: #071f70;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.admission-contact-buttons a:last-child {
+  background: #ed1c24;
+
+  color: #fff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .admission-layout {
+    grid-template-columns:
+      220px 1fr;
+
+    gap: 30px;
+  }
+
+  .admission-highlights {
+    grid-template-columns:
+      1fr;
+  }
+
+  .graduate-cards {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .admission-hero {
+    min-height: 350px;
+  }
+
+  .admission-hero h1 {
+    font-size: 45px;
+  }
+
+  .admission-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admission-sidebar {
+    position: static;
+  }
+
+  .admission-sidebar nav {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 5px;
+  }
+
+  .admission-sidebar button {
+    padding: 12px;
+  }
+
+  .process-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .graduate-cards {
+    grid-template-columns:
+      1fr;
+  }
+
+  .admission-contact {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .admission-contact-buttons {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .admission-main {
+    padding: 60px 0;
+  }
+
+  .admission-hero h1 {
+    font-size: 38px;
+  }
+
+  .admission-hero p {
+    font-size: 15px;
+  }
+
+  .admission-introduction h2 {
+    font-size: 32px;
+  }
+
+  .admission-content-section h2 {
+    font-size: 28px;
+  }
+
+  .admission-sidebar nav {
+    grid-template-columns:
+      1fr;
+  }
+
+  .regulation-item {
+    grid-template-columns:
+      45px 1fr;
+
+    gap: 15px;
+  }
+
+  .regulation-item > span {
+    width: 38px;
+    height: 38px;
+  }
+
+  .requirement {
+    gap: 12px;
+  }
+
+  .admission-contact-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .admission-contact-buttons a {
+    text-align: center;
+  }
+
+}
+/* =========================================================
+   GRADUATE SCHOOL
+========================================================= */
+
+.graduate-admission-block {
+  margin-top: 40px;
+  padding: 30px;
+
+  background: #f7f8fb;
+
+  border-top: 3px solid #071f70;
+}
+
+.graduate-admission-block.documents-block {
+  border-top-color: #ed1c24;
+}
+
+.graduate-block-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.graduate-block-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #071f70;
+
+  font-size: 25px;
+}
+
+.graduate-block-icon.red {
+  background: #ed1c24;
+}
+
+.graduate-block-heading span {
+  display: block;
+
+  color: #ed1c24;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 5px;
+}
+
+.graduate-block-heading h3 {
+  color: #071f70;
+
+  font-size: 23px;
+
+  margin: 0;
+}
+
+.graduate-description {
+  color: #555;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  margin: 5px 0 0;
+}
+
+.graduate-admission-block .requirements {
+  margin-top: 15px;
+
+  background: #fff;
+}
+
+.graduate-admission-block .requirement {
+  padding: 17px 15px;
+}
+
+.graduate-admission-block .requirement:last-child {
+  border-bottom: none;
+}
+
+.graduate-info-box {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  margin-top: 35px;
+
+  padding: 25px;
+
+  background: #fff8df;
+
+  border-left: 4px solid #f4c400;
+}
+
+.graduate-info-icon {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f4c400;
+
+  color: #071f70;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.graduate-info-box h3 {
+  color: #071f70;
+
+  font-size: 18px;
+
+  margin: 0 0 7px;
+}
+
+.graduate-info-box p {
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+

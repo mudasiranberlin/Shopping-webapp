@@ -1,0 +1,1149 @@
+/* =========================================================
+   COLLEGE OF SCIENCES
+========================================================= */
+
+.college-sciences-page {
+  background: #fff;
+  color: #333;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.science-hero {
+  min-height: 440px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 24, 92, 0.98),
+      rgba(7, 31, 112, 0.82),
+      rgba(237, 28, 36, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1800&q=85")
+      center/cover no-repeat;
+
+  color: #fff;
+}
+
+.science-label {
+  display: inline-block;
+
+  color: #f4c400;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.science-hero h1 {
+  font-size: 62px;
+
+  line-height: 1.05;
+
+  margin: 0 0 20px;
+
+  color: #fff;
+}
+
+.science-hero p {
+  max-width: 700px;
+
+  font-size: 19px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  margin: 0;
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.science-breadcrumb {
+  padding: 17px 0;
+
+  background: #f5f6f9;
+
+  font-size: 14px;
+}
+
+.science-breadcrumb a {
+  color: #071f70;
+}
+
+.science-breadcrumb span {
+  margin: 0 10px;
+
+  color: #aaa;
+}
+
+.science-breadcrumb strong {
+  color: #ed1c24;
+}
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.science-section {
+  padding: 90px 0;
+}
+
+.section-label {
+  display: inline-block;
+
+  color: #ed1c24;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.section-label.light {
+  color: #f4c400;
+}
+
+.science-section h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin: 0 0 25px;
+}
+
+.science-section h2 span {
+  color: #ed1c24;
+}
+
+.science-section p {
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+/* =========================================================
+   DEAN
+========================================================= */
+
+.dean-section {
+  background: #fff;
+}
+
+.science-two-column {
+  display: grid;
+
+  grid-template-columns:
+    380px 1fr;
+
+  gap: 75px;
+
+  align-items: center;
+}
+
+.dean-placeholder {
+  width: 100%;
+
+  height: 460px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #071f70,
+      #183b9b
+    );
+
+  box-shadow:
+    0 20px 45px
+    rgba(7, 31, 112, 0.2);
+
+  position: relative;
+}
+
+.dean-placeholder::after {
+  content: "";
+
+  position: absolute;
+
+  width: 85%;
+
+  height: 85%;
+
+  border: 2px solid
+    rgba(244, 196, 0, 0.5);
+}
+
+.dean-placeholder span {
+  width: 130px;
+  height: 130px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  color: #071f70;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.dean-signature {
+  border-left: 4px solid #ed1c24;
+
+  padding-left: 18px;
+
+  margin-top: 25px;
+}
+
+.dean-signature strong {
+  display: block;
+
+  color: #071f70;
+
+  font-size: 18px;
+}
+
+.dean-signature span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   DEPARTMENT OVERVIEW
+========================================================= */
+
+.department-overview {
+  padding: 90px 0;
+
+  background: #f7f8fb;
+}
+
+.section-heading {
+  text-align: center;
+
+  max-width: 760px;
+
+  margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+  color: #071f70;
+
+  font-size: 42px;
+
+  margin: 0 0 15px;
+}
+
+.section-heading p {
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.department-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.department-card {
+  width: 100%;
+
+  border: none;
+
+  background: #fff;
+
+  text-align: left;
+
+  padding: 30px;
+
+  display: flex;
+
+  gap: 20px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  border-bottom: 4px solid transparent;
+
+  font-family: inherit;
+}
+
+.department-card:hover {
+  transform: translateY(-6px);
+
+  border-bottom-color: #ed1c24;
+
+  box-shadow:
+    0 15px 35px
+    rgba(0, 0, 0, 0.1);
+}
+
+.department-icon {
+  min-width: 55px;
+
+  height: 55px;
+
+  background: #071f70;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  font-size: 25px;
+}
+
+.department-card h3 {
+  color: #071f70;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  margin: 0 0 10px;
+}
+
+.department-card p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  margin: 0 0 12px;
+}
+
+.department-card span {
+  color: #ed1c24;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+/* =========================================================
+   DEPARTMENT AREA
+========================================================= */
+
+.department-area {
+  padding: 90px 0;
+
+  background: #fff;
+}
+
+.department-layout {
+  display: grid;
+
+  grid-template-columns:
+    280px 1fr;
+
+  gap: 55px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.department-sidebar {
+  position: sticky;
+
+  top: 30px;
+
+  background: #071f70;
+
+  box-shadow:
+    0 15px 35px
+    rgba(7, 31, 112, 0.15);
+}
+
+.sidebar-title {
+  padding: 25px;
+
+  background: #061958;
+
+  color: #fff;
+}
+
+.sidebar-title span {
+  display: block;
+
+  color: #f4c400;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 6px;
+}
+
+.sidebar-title h3 {
+  color: #fff;
+
+  margin: 0;
+
+  font-size: 21px;
+}
+
+.department-sidebar nav {
+  padding: 10px;
+}
+
+.department-sidebar button {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: none;
+
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  text-align: left;
+
+  padding: 14px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition: 0.25s ease;
+}
+
+.department-sidebar button span {
+  font-size: 18px;
+}
+
+.department-sidebar button strong {
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+.department-sidebar button:hover,
+.department-sidebar button.active {
+  background: #ed1c24;
+
+  color: #fff;
+}
+
+/* =========================================================
+   DEPARTMENT DETAILS
+========================================================= */
+
+.department-main {
+  min-width: 0;
+}
+
+.department-detail {
+  scroll-margin-top: 30px;
+
+  margin-bottom: 80px;
+
+  border: 1px solid #e5e7ed;
+
+  background: #fff;
+
+  box-shadow:
+    0 8px 30px
+    rgba(0, 0, 0, 0.04);
+}
+
+.department-detail:last-child {
+  margin-bottom: 0;
+}
+
+.department-detail-header {
+  padding: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071f70,
+      #0c328f
+    );
+
+  color: #fff;
+}
+
+.detail-icon {
+  width: 75px;
+  height: 75px;
+
+  min-width: 75px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+
+  border-radius: 5px;
+
+  font-size: 32px;
+}
+
+.department-detail-header > div:last-child > span {
+  color: #f4c400;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.department-detail-header h2 {
+  color: #fff;
+
+  font-size: 30px;
+
+  line-height: 1.25;
+
+  margin: 5px 0 8px;
+}
+
+.department-detail-header p {
+  color: rgba(255, 255, 255, 0.8);
+
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.department-detail-content {
+  padding: 35px;
+}
+
+.detail-section {
+  padding: 0 0 35px;
+
+  margin-bottom: 35px;
+
+  border-bottom:
+    1px solid #e7e8ec;
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+
+  margin-bottom: 0;
+}
+
+.detail-label {
+  display: block;
+
+  color: #ed1c24;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.detail-section h3 {
+  color: #071f70;
+
+  font-size: 25px;
+
+  margin: 0 0 15px;
+}
+
+.detail-section p {
+  color: #555;
+
+  line-height: 1.85;
+
+  font-size: 15px;
+
+  margin-bottom: 15px;
+}
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.message-box {
+  padding: 30px;
+
+  background: #f7f8fb;
+
+  border-left: 4px solid #ed1c24;
+
+  border-bottom: none;
+}
+
+.message-box h3 {
+  font-size: 27px;
+}
+
+/* =========================================================
+   INFO CARDS
+========================================================= */
+
+.info-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.info-card {
+  padding: 17px 18px;
+
+  background: #f7f8fb;
+
+  border-left: 3px solid #071f70;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.info-card span {
+  color: #ed1c24;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.info-card strong {
+  color: #333;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   CAREER
+========================================================= */
+
+.career-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.career-list div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px;
+
+  background: #f7f8fb;
+
+  font-size: 14px;
+
+  color: #333;
+}
+
+.career-list span {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #071f70;
+
+  color: #fff;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   ACHIEVEMENTS
+========================================================= */
+
+.achievement-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.achievement-grid div {
+  padding: 20px;
+
+  background: #f7f8fb;
+
+  text-align: center;
+}
+
+.achievement-grid span {
+  display: block;
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+.achievement-grid strong {
+  display: block;
+
+  color: #071f70;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   FACILITIES
+========================================================= */
+
+.facility-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.facility-grid > div {
+  padding: 25px;
+
+  background: #f7f8fb;
+}
+
+.facility-grid span {
+  font-size: 28px;
+}
+
+.facility-grid h4 {
+  color: #071f70;
+
+  margin: 10px 0 7px;
+
+  font-size: 17px;
+}
+
+.facility-grid p {
+  font-size: 13px;
+
+  margin: 0;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.detail-contact {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071f70,
+      #0c328f
+    );
+
+  color: #fff;
+}
+
+.detail-contact h3 {
+  color: #fff;
+
+  margin: 0 0 10px;
+
+  font-size: 20px;
+}
+
+.detail-contact p {
+  color: rgba(255, 255, 255, 0.78);
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  max-width: 600px;
+}
+
+.detail-contact .detail-label {
+  color: #f4c400;
+}
+
+.contact-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+.contact-buttons a {
+  padding: 12px 18px;
+
+  color: #071f70;
+
+  background: #fff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.contact-buttons a:last-child {
+  color: #fff;
+
+  background: #ed1c24;
+}
+
+/* =========================================================
+   RESEARCH
+========================================================= */
+
+.research-highlight {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.research-highlight > div {
+  padding: 25px;
+
+  background: #071f70;
+
+  color: #fff;
+}
+
+.research-highlight span {
+  color: #f4c400;
+
+  font-weight: 700;
+
+  font-size: 13px;
+}
+
+.research-highlight h3 {
+  color: #fff;
+
+  font-size: 18px;
+
+  margin: 10px 0;
+}
+
+.research-highlight p {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 13px;
+
+  margin: 0;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.science-cta {
+  padding: 90px 0;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 31, 112, 0.97),
+      rgba(237, 28, 36, 0.88)
+    );
+}
+
+.science-cta h2 {
+  color: #fff;
+
+  font-size: 44px;
+
+  max-width: 800px;
+
+  margin: 0 auto 20px;
+}
+
+.science-cta p {
+  max-width: 650px;
+
+  margin: 0 auto 30px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  line-height: 1.8;
+}
+
+.science-cta-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.science-cta-buttons a {
+  padding: 14px 25px;
+
+  background: #fff;
+
+  color: #071f70;
+
+  font-weight: 700;
+
+  font-size: 14px;
+}
+
+.science-cta-buttons a:last-child {
+  background: #f4c400;
+
+  color: #071f70;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .science-two-column {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .dean-placeholder {
+    height: 350px;
+
+    max-width: 450px;
+  }
+
+  .department-card-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .department-layout {
+    grid-template-columns: 220px 1fr;
+
+    gap: 30px;
+  }
+
+  .department-sidebar button strong {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .science-hero {
+    min-height: 350px;
+  }
+
+  .science-hero h1 {
+    font-size: 45px;
+  }
+
+  .department-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .department-sidebar {
+    position: static;
+  }
+
+  .department-sidebar nav {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 5px;
+  }
+
+  .department-sidebar button {
+    padding: 12px;
+  }
+
+  .info-card-grid,
+  .career-list,
+  .facility-grid,
+  .achievement-grid,
+  .research-highlight {
+    grid-template-columns: 1fr;
+  }
+
+  .department-detail-header {
+    padding: 25px;
+
+    align-items: flex-start;
+  }
+
+  .department-detail-header h2 {
+    font-size: 24px;
+  }
+
+  .department-detail-content {
+    padding: 25px;
+  }
+
+  .detail-contact {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .contact-buttons {
+    flex-wrap: wrap;
+  }
+
+  .science-cta h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .science-section,
+  .department-overview,
+  .department-area {
+    padding: 60px 0;
+  }
+
+  .science-hero h1 {
+    font-size: 37px;
+  }
+
+  .science-hero p {
+    font-size: 15px;
+  }
+
+  .department-sidebar nav {
+    grid-template-columns: 1fr;
+  }
+
+  .department-detail-header {
+    flex-direction: column;
+  }
+
+  .detail-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .department-detail-content {
+    padding: 20px;
+  }
+
+  .message-box {
+    padding: 20px;
+  }
+
+  .science-cta-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+}
