@@ -5,7 +5,7 @@ import Header from '../../components/Header'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-function Homepage() {
+function Homepage({cart}) {
   const [products,setProducts]= useState([])
   useEffect(()=>{
     axios.get('http://localhost:8000/api/v1/product/product')
@@ -20,7 +20,7 @@ function Homepage() {
 
   return (
     <>
-      <Header/>
+      <Header cart={cart}/>
 
       <div className="home-page">
         <div className="products-grid">

@@ -3,18 +3,7 @@ import './header.css'
 import { Link } from 'react-router'
 import axios from 'axios'
 
-function Header() {
-  
-  const [cart,setCart]= useState([])
-  useEffect(()=>{
-    axios.get('http://localhost:8000/api/v1/cart-items')
-  .then((response)=>{
-    // setProducts(response.data.data);
-     setCart(response.data.data);
-     console.log(response.data.data);
-     
-  })
-  },[])
+function Header({cart}) {
   
   let totalquantity = 0
   cart.forEach(cartItem => {
