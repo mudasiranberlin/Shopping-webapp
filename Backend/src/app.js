@@ -22,12 +22,19 @@ import userRouter from './routes/user.routes.js'
 
 import productRouter from './routes/product.routes.js'
 
+import cartRouter from "./routes/cart.routes.js";
+
 
 
 //routes decleration 
 app.use("/api/v1/users",userRouter)
 // Send one
 app.use("/api/v1/product",productRouter)
+
+
+
+app.use("/api/v1", cartRouter);
+
 
 
 // http://localhost:8000//api/v1/users/register

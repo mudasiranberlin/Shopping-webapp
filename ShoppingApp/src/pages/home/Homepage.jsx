@@ -1,19 +1,26 @@
 
 import './Homepage.css'
 import Header from '../../components/Header'
-import { products } from '../../../Ecommerce/data/products'
+// import { products } from '../../../Ecommerce/data/products'
 import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 function Homepage() {
-  axios.get('http://localhost:8000/api/v1/product/product')
+  const [products,setProducts]= useState([])
+  useEffect(()=>{
+    axios.get('http://localhost:8000/api/v1/product/product')
   .then((response)=>{
-    console.log(response.data);
+    setProducts(response.data.data);
+    console.log(response.data.data[0]._id);
+    
     
   })
+  },[])
+  
 
   return (
     <>
-      <Header />
+      <Header/>
 
       <div className="home-page">
         <div className="products-grid">
