@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './header.css'
 import { Link } from 'react-router'
+import axios from 'axios'
 
 function Header() {
+  
+  const [cart,setCart]= useState([])
+  useEffect(()=>{
+    axios.get('http://localhost:8000/api/v1/cart-items')
+  .then((response)=>{
+    // setProducts(response.data.data);
+     setCart(response.data.data);
+     console.log(response.data.data);
+     
+  })
+  },[])
+  
+  let totalquantity = 0
+  cart.forEach(cartItem => {
+    totalquantity +=cartItem.quantity
+  });
   return (
      <div className="header">
       <div className="left-section">
@@ -30,7 +47,7 @@ function Header() {
 
         <Link className="cart-link header-link" to="/checkout">
           <img className="cart-icon" src="images/icons/cart-icon.png" />
-          <div className="cart-quantity">3</div>
+          <div className="cart-quantity">{totalquantity}</div>
           <div className="cart-text">Cart</div>
         </Link>
       </div>
